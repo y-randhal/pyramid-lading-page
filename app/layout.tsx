@@ -4,17 +4,19 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const basePath = process.env.NODE_ENV === 'production' ? '/pyramid-lading-page' : '';
+
 export const metadata: Metadata = {
   title: "Pyramid - The AI Course You Didn't Know You Needed",
   description: "Master AI the easy way. So easy, anyone can do it. (Yes, even you.)",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${basePath}/favicon.svg`,
+    shortcut: `${basePath}/favicon.svg`,
   },
   openGraph: {
     title: "Pyramid - The AI Course You Didn't Know You Needed",
     description: "Master AI the easy way. So easy, anyone can do it. (Yes, even you.)",
-    images: ["/og-image.png"],
+    images: [`${basePath}/images/og-image.png`],
   },
 };
 

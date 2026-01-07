@@ -12,11 +12,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  images: { unoptimized: true },
-  output: 'export', // Forces Next.js to build a static site
+  output: 'export',
   basePath: '/pyramid-lading-page',
   images: {
-    unoptimized: true, // Required because GitHub Pages doesn't support the Next.js Image Optimizer
+    unoptimized: true,
   },
 };
 
